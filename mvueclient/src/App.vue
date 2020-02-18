@@ -1,17 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-      222
-    </div>
+    
     <router-view/>
+    <footer-guide></footer-guide>
   </div>
 </template>
+<script>
+import FooterGuide from "./components/FooterGuide/FooterGuide";
 
+
+export default {
+  components: {
+    FooterGuide
+  }
+};
+</script>
 <style >
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-top: 50px;
+  box-sizing: border-box;
 }
 </style>

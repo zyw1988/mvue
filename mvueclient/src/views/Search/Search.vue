@@ -1,5 +1,20 @@
 <template>
   <div class="search">
-    <h1>This is an search page</h1>
+    <head-guide :title="title"></head-guide>
   </div>
 </template>
+<script>
+import HeadGuide from '../../components/HeadGuide/HeadGuide'
+
+export default {
+    name:"Search",
+    data () {
+      return {
+        title:"搜索框"
+      }
+    },
+    components:{
+      HeadGuide
+    }
+}
+</script>
